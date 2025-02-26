@@ -38,4 +38,8 @@ test {
         events "passed", "failed", "skipped"
         showStandardStreams = true
     }
+        reports {
+        junitXml.enabled = true // Ensure JUnit XML reports are enabled (this is needed for Jenkins)
+        html.enabled = true // Enable HTML reports
+    }
 }
